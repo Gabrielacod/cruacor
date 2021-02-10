@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: helvetica, sans-serif;
+    font-size: 1rem;
+    color: #000;
+    background-color: #f5f5f5;
+}
+
+header nav {
+    background-color: #000;
+    padding: 10px 0;
+}
+
+header nav .container {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: small;
+}
+
+header nav .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+header .hero {
+    background-image: url('imagem/cruacor.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .hero form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .hero form input {
+    width: 70vw;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .3);
+}
+
+main {
+    margin: 20px 0px;
+}
+
+main .container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+main .container .roupas {
+    display: flex;
+    flex-direction: column;
+}
+
+.roupa {
+    background-color: #fff;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+.roupa:hover {
+    background-color: #f5f5f5;
+}
+
+.roupa img {
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 10px;
+}
+
+.roupa h4 {
+    padding: 0px 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.roupa p {
+    padding: 0px 20px;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.roupa button {
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+    transition: 0.3s ease;
+}
+
+.roupa button:hover {
+    background-color: #dedede;
+    color: #000;
+}
+
+footer {
+    padding: 10px 0px;
+}
+
+footer .container p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.hero-sobre {
+    height: 200px;
+    background-color: #f5f5f5;
+    color: rgb(8, 1, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.hero-sobre .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+    main .container .roupas {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+main .container .roupas .roupa {
+    width: 300px;
+}
+
+
+
+
+/* container */
+.container {
+    width: 90vw;
+    margin: 0px auto;
+}
