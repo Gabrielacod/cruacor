@@ -36,14 +36,13 @@ header nav .menu ul li a {
 }
 
 header .hero {
-    background-image: url('imagem/cruacor.jpg');
-    background-size: cover;
+    background-image: url(imagem/cruacor.jpg);
     background-repeat: no-repeat;
     background-position: center;
     height: 350px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 header .hero form {
